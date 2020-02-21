@@ -1,5 +1,5 @@
 FROM centos:centos6
-USER root
+
 # Enable Extra Packages for Enterprise Linux (EPEL) for CentOS
 RUN     yum install -y epel-release
 # Install Node.js and npm
@@ -15,4 +15,4 @@ COPY . /src
 #port
 EXPOSE  8080
 
-CMD ["node", "/src/index.js"]
+CMD ["node", "index.js"]
